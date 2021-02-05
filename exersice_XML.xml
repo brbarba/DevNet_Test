@@ -1,0 +1,8 @@
+<server>
+  <pool>http</pool>
+    <description>My_virtual_server_test</description>
+    <name>http-virtual</name>
+    <mask>255.255.255.255</mask>
+    
+
+</server>
