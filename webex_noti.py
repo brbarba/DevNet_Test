@@ -7,7 +7,7 @@ room_ID = 'Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vNWEwNzNjYzAtNmE0Y
 
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + access_token }
 
-body = { 'roomId': 'room_ID', 'text': 'Test notification 4\nusando room_ID como variable\nFrom Pyhton' }
+body = { 'roomId': room_ID, 'text': 'Test notification 4\nusando room_ID como variable\nFrom Pyhton' }
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
