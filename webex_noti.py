@@ -24,7 +24,7 @@ messages = [
 
 for message in messages:
 
-    body = { 'roomId': room_ID,, 'markdown': message }
+    body = { 'roomId': room_ID, 'markdown': message }
     response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
     print( response.status_code )
