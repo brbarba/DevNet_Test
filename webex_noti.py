@@ -17,6 +17,7 @@ print( response.status_code )
 print( response.text )
 
 messages = [
+    'as an example of markdown',
     '**Warning!!!**',
     '_Warning!!!_',
     '[Danger, Will Robinson!!!](https://en.wikipedia.org/wiki/Lost_in_Space#Catchphrases)'
