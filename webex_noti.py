@@ -7,7 +7,7 @@ room_ID = 'Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vNWEwNzNjYzAtNmE0Y
 
 httpHeaders = { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + access_token }
 
- body = { 'toPersonEmail': 'bruno.barba@gmail.com', 'text': 'Test notification From Pyhton' }
+body = { 'toPersonEmail': 'bruno.barba@gmail.com', 'text': 'Test notification From Pyhton' }
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
