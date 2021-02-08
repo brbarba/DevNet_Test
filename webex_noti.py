@@ -8,8 +8,8 @@ room_ID = 'Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vNWEwNzNjYzAtNmE0Y
 email_ID = 'gifbot@webex.bot'
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + access_token }
 
-#body = { 'roomId': room_ID, 'text': 'Test notification 4\nusando room_ID como variable\nFrom Pyhton' }
-body = { 'toPersonEmail': 'gifbot@webex.bot', 'text': 'Hello' }
+body = { 'roomId': room_ID, 'text': 'Test notification 4\nusando room_ID como variable\nFrom Pyhton' }
+#body = { 'toPersonEmail': 'gifbot@webex.bot', 'text': 'Hello' }
 
 response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
@@ -24,7 +24,7 @@ messages = [
 
 for message in messages:
 
-    body = { 'toPersonEmail': 'gifbot@webex.bot', 'markdown': message }
+    body = { 'roomId': room_ID,, 'markdown': message }
     response = requests.post( url = apiUrl, json = body, headers = httpHeaders )
 
     print( response.status_code )
