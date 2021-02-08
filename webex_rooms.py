@@ -8,5 +8,4 @@ httpHeaders = { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' +
 queryParams = { 'sortBy': 'lastactivity', 'max': '2' }
 response = requests.get( url = apiUrl, headers = httpHeaders, params = queryParams )
 print( response.status_code )
- print( response.text )
- 
+print( response.text )
