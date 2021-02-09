@@ -3,8 +3,8 @@ import requests
 # documentation at https://developer.webex.com/docs/api/v1/messages/create-a-message
 
 apiUrl = 'https://webexapis.com/v1/messages'
-access_token = 'ZDc2ZDY0NjYtYzVlNC00MGY0LWI0NTItOThkZjRhZDIxZjFlYjViNWE1ZDctMDEw_P0A1_974dde6a-da6b-4f08-99e0-2e97dfbfbdac'
-room_ID = 'Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vNWEwNzNjYzAtNmE0YS0xMWViLTllNjctNWYxYjVlZTU3Mjlh'
+access_token = 'replace with your_access_token'
+room_ID = 'replace with your room ID'
 email_ID = 'gifbot@webex.bot'
 httpHeaders = { 'Content-type': 'application/json', 'Authorization': 'Bearer ' + access_token }
 
